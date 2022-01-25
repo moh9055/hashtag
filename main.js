@@ -10,6 +10,15 @@ window.onscroll = function(){
     }
 }
 
+
+let nav = document.querySelectorAll(".nav-link");
+let navCollapse = document.querySelector(".navbar-collapse.collapse");
+nav.forEach(function(a){
+    a.addEventListener("click", function(){
+        navCollapse.classList.remove("show");
+    })
+})
+
 $('.owl-carousel').owlCarousel({
     items:4,
     loop:true,
